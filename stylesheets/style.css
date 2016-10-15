@@ -1,0 +1,649 @@
+/* line 1, ../sass/_reset.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 100%;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 6, ../sass/style.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 7, ../sass/style.scss */
+.wrapper {
+  min-height: 100%;
+}
+
+/* line 8, ../sass/style.scss */
+nav {
+  padding: 100px;
+  text-align: center;
+}
+
+/* line 13, ../sass/style.scss */
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* line 23, ../sass/style.scss */
+nav > ul > li {
+  float: left;
+  width: 150px;
+  height: 65px;
+  border-right: 2px solid #d5d5d5;
+  line-height: 65px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+/* line 36, ../sass/style.scss */
+nav > ul > li:hover {
+  background: #d5d5d5;
+  border-radius: 5px;
+}
+
+/* line 41, ../sass/style.scss */
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+}
+
+/* line 49, ../sass/style.scss */
+ul.drop-menu li {
+  border: 1px solid #d5d5d5;
+  background: #666;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 55, ../sass/style.scss */
+ul.drop-menu li:hover {
+  background: #606060;
+}
+
+/* line 57, ../sass/style.scss */
+ul.drop-menu li:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* line 59, ../sass/style.scss */
+ul.drop-menu li {
+  display: none;
+}
+
+/* line 61, ../sass/style.scss */
+li:hover > ul.drop-menu li {
+  display: block;
+}
+
+/* line 64, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 {
+  perspective: 1000px;
+}
+/* line 67, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li {
+  opacity: 0;
+}
+/* line 70, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
+  background-color: #6e6e6e;
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 70, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
+  background-color: #757575;
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 70, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
+  background-color: #7d7d7d;
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 70, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
+  background-color: #858585;
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-delay: 900ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 70, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
+  background-color: #8c8c8c;
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-delay: 1200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 70, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
+  background-color: #949494;
+  animation-name: menu1;
+  animation-duration: 300ms;
+  animation-delay: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-180deg) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+/* line 86, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 {
+  perspective: 1000px;
+}
+/* line 88, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li {
+  opacity: 0;
+}
+/* line 91, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
+  animation-name: menu2;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 91, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
+  animation-name: menu2;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 91, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
+  animation-name: menu2;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 91, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
+  animation-name: menu2;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 91, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
+  animation-name: menu2;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 91, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-2 li:nth-child(6) {
+  animation-name: menu2;
+  animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu2 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-270deg) translateY(220px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+/* line 107, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 {
+  perspective: 1000px;
+}
+/* line 110, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li {
+  opacity: 0;
+  transform-origin: top;
+}
+/* line 114, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li:nth-child(1) {
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: -150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 114, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li:nth-child(2) {
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 114, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li:nth-child(3) {
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 114, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li:nth-child(4) {
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 114, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li:nth-child(5) {
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 114, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-3 li:nth-child(6) {
+  animation-name: menu3;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu3 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-270deg);
+  }
+  60% {
+    transform: rotateX(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+/* line 130, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 {
+  perspective: 1000px;
+}
+/* line 132, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li {
+  opacity: 0;
+  transform-origin: top;
+}
+/* line 136, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li:nth-child(1) {
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: -150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 136, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li:nth-child(2) {
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 136, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li:nth-child(3) {
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 136, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li:nth-child(4) {
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 136, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li:nth-child(5) {
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 136, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-4 li:nth-child(6) {
+  animation-name: menu4;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu4 {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-60px);
+  }
+  70% {
+    transform: scale(1.3) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+/* line 152, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 {
+  perspective: 1000px;
+}
+/* line 154, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li {
+  opacity: 0;
+  transform-origin: top right;
+}
+/* line 158, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li:nth-child(1) {
+  animation-name: menu5;
+  animation-duration: 300ms;
+  animation-delay: -150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 158, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li:nth-child(2) {
+  animation-name: menu5;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 158, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li:nth-child(3) {
+  animation-name: menu5;
+  animation-duration: 300ms;
+  animation-delay: 150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 158, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li:nth-child(4) {
+  animation-name: menu5;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 158, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li:nth-child(5) {
+  animation-name: menu5;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 158, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-5 li:nth-child(6) {
+  animation-name: menu5;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu5 {
+  0% {
+    opacity: 0;
+    transform: rotate(-30deg) translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+/* line 173, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 {
+  perspective: 1000px;
+}
+/* line 175, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li {
+  opacity: 0;
+  transform-origin: top right;
+}
+/* line 179, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li:nth-child(1) {
+  animation-name: menu6;
+  animation-duration: 300ms;
+  animation-delay: -150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 179, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li:nth-child(2) {
+  animation-name: menu6;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 179, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li:nth-child(3) {
+  animation-name: menu6;
+  animation-duration: 300ms;
+  animation-delay: 150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 179, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li:nth-child(4) {
+  animation-name: menu6;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 179, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li:nth-child(5) {
+  animation-name: menu6;
+  animation-duration: 300ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 179, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-6 li:nth-child(6) {
+  animation-name: menu6;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu6 {
+  0% {
+    opacity: 0;
+    transform: rotate(-30deg) translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+/* line 194, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 {
+  perspective: 1000px;
+}
+/* line 196, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li {
+  opacity: 0;
+  transform-origin: top;
+}
+/* line 200, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li:nth-child(1) {
+  animation-name: menu7;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 200, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li:nth-child(2) {
+  animation-name: menu7;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 200, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li:nth-child(3) {
+  animation-name: menu7;
+  animation-duration: 300ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 200, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li:nth-child(4) {
+  animation-name: menu7;
+  animation-duration: 300ms;
+  animation-delay: 900ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 200, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li:nth-child(5) {
+  animation-name: menu7;
+  animation-duration: 300ms;
+  animation-delay: 1200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 200, ../sass/style.scss */
+li:hover > ul.drop-menu.menu-7 li:nth-child(6) {
+  animation-name: menu7;
+  animation-duration: 300ms;
+  animation-delay: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu7 {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) translatey(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+/* line 215, ../sass/style.scss */
+footer {
+  position: absolute;
+  opacity: 0;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+  animation-name: fall;
+  animation-delay: 1000ms;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* line 228, ../sass/style.scss */
+.square {
+  width: 51px;
+  height: 51px;
+  display: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #d5d5d5;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8px;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 247, ../sass/style.scss */
+.square:hover {
+  cursor: pointer;
+  border: 2px solid #3A5897;
+  background-color: #d5d5d5;
+  animation-name: circles;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+@keyframes circles {
+  0% {
+    opacity: 0.5;
+    transform: rotate(-270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
